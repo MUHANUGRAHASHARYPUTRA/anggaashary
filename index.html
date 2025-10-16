@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG - Inovasi Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">AG</div>
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#tentang">Tentang Saya</a>
+            <a href="proyek.html">Proyek</a>
+        </nav>
+        <button class="btn btn-login" onclick="document.querySelector('.contact-section').scrollIntoView({behavior: 'smooth'});">Kontak</button>
+    </header>
+
+    <section id="tentang" class="hero-section dark-bg" style="padding-bottom: 80px;">
+        <div style="max-width: 1000px; margin: 0 auto; display: flex; align-items: center; text-align: left; padding: 40px; background-color: rgba(255, 255, 255, 0.05); border-radius: 12px;">
+            
+            <img src="images/profile.jpg" alt="Foto Profil" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin-right: 40px; border: 5px solid var(--white);" />
+            
+            <div>
+                
+                <h1 style="font-size: 2.5em; margin-top: 15px; margin-bottom: 5px;">MUH ANUGRAH ASHARY</h1>
+                <p style="margin-top: 15px; margin-bottom: 5px; font-style: italic; font-size: 1.1em;">"Misi saya adalah mengubah ide klien menjadi solusi digital yang fungsional dan indah."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section">
+        <h2>Perjalanan Karir Singkat</h2>
+
+        <div style="max-width: 900px; margin: 40px auto; text-align: left;">
+
+            <p style="margin-bottom: 30px; color: var(--text-dark);">Sebagai mahasiswa semester 3 Sistem Informasi di Universitas Hasanuddin, saya fokus pada pengembangan aplikasi yang <strong>bersih, cepat, dan terukur</strong>. Saya percaya bahwa teknologi terbaik adalah teknologi yang <strong>transparan dan mudah digunakan</strong> oleh pengguna akhir. Selain kuliah, saya juga menjalankan bisnis sampingan di bidang digital.</p>
+
+            <h3 style="color: var(--blue); margin-top: 30px; margin-bottom: 15px;">Pencapaian Utama</h3>
+            <ul style="list-style-type: none; padding-left: 20px; color: var(--text-dark);">
+                <li style="margin-bottom: 10px;">✅ Menyelesaikan beberapa proyek web dan aplikasi untuk klien lokal.</li>
+                <li style="margin-bottom: 10px;">✅ Mengembangkan platform e-commerce sederhana dengan performa optimal.</li>
+                <li style="margin-bottom: 10px;">✅ Menguasai teknologi web modern seperti HTML, CSS, JavaScript, dan framework terkait.</li>
+            </ul>
+        </div>
+
+        <button class="btn btn-main" style="margin-top: 30px;" onclick="window.location.href='https://drive.google.com/file/d/1R0gMUkTwqvv5NnIZpEGee1I-_DQM4lW2/view?usp=sharing';">Unduh CV Lengkap</button>
+
+    </section>
+
+    <section class="slideshow-section">
+        <h2>My Sweetness</h2>
+        <div style="max-width: 1000px; margin: 20px auto 0; text-align: left; padding: 20px; background-color: rgba(255, 255, 255, 0.05); border-radius: 12px; color: var(--text-dark);">
+            <h3 style="color: var(--blue); margin-bottom: 15px;">Tentang Pasangan Saya</h3>
+            <p style="margin-bottom: 15px;">Selain itu, saya juga mempunyai pasangan yang luar biasa, selalu penuh semangat dan kebaikan hati. Dia adalah teman sejati yang selalu ada di samping saya dalam suka dan duka. Selain itu, saya juga memiliki pasangan yang mendukung perjalanan hidup saya.</p>
+            <p style="margin-bottom: 10px;"><strong>Hobi:</strong> Membaca buku, memasak, dan traveling</p>
+            <p style="margin-bottom: 10px;"><strong>Kesukaan:</strong> Musik klasik, film romantis, dan makanan pedas</p>
+            <p style="margin-bottom: 10px;"><strong>Cita-cita:</strong> Menjadi seorang penulis dan membantu orang lain</p>
+            <p><strong>Pesan untuk dunia:</strong> "Selalu percaya pada diri sendiri dan jangan pernah menyerah pada mimpi."</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="slideshow">
+                <img src="images/pacar1.jpg" alt="Foto 1">
+                <img src="images/pacar2.jpg" alt="Foto 2">
+                <img src="images/pacar3.jpg" alt="Foto 3">
+                <img src="images/pacar4.jpg" alt="Foto 4">
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section id="beranda" class="hero-section dark-bg">
+        <h1 class="animate-fade-in">Mulai Inovasi: Menciptakan Solusi Digital Terbaik</h1>
+        <p class="animate-fade-in-delay">Web Development, UI/UX Design, dan Konsultasi Teknologi sebagai Mahasiswa & Wirausaha.</p>
+        <div class="cta-group animate-fade-in-delay">
+            <button class="btn btn-main" onclick="window.location.href='proyek.html'">Lihat Proyek Terbaru</button>
+            <button class="btn btn-main" onclick="document.querySelector('#layanan').scrollIntoView({behavior: 'smooth'})">Dapatkan Konsultasi</button>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="search-container">
+            <h2>Cari Proyek Saya</h2>
+            <p>Telusuri studi kasus dan proyek unggulan berdasarkan kategori.</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Temukan studi kasus, teknologi, atau klien">
+                <button class="btn btn-search">Cari</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section light-bg">
+        <h2>Keahlian Utama Saya</h2>
+        <div class="comparison-table">
+            <div class="table-row table-header">
+                <div>Keahlian</div>
+                <div>Pengalaman (Tahun)</div>
+                <div>Proyek Sukses</div>
+            </div>
+            <div class="table-row">
+                <div>Web Development</div>
+                <div>2+</div>
+                <div>Several Projects</div>
+            </div>
+            <div class="table-row">
+                <div>UI/UX Design</div>
+                <div>1+</div>
+                <div>Portfolio & Apps</div>
+            </div>
+            <button class="btn btn-more">Lihat Lebih Banyak Keahlian</button>
+        </div>
+    </section>
+
+    <section class="tips-section dark-bg">
+        <h2>6 Prinsip Kerja Saya</h2>
+        <div class="tips-grid">
+            <div class="tip-card animate-on-scroll">
+                <h3 style="color: #3664F4;">Singkat</h3>
+                <p>Solusi harus elegan dan mudah dipahami, tanpa kompleksitas yang tidak perlu.</p>
+            </div>
+            <div class="tip-card animate-on-scroll delay-1">
+                <h3 style="color: #3664F4;">Simpel</h3>
+                <p>Fokus pada fungsionalitas inti untuk memberikan nilai maksimal secara cepat.</p>
+            </div>
+            <div class="tip-card animate-on-scroll delay-2">
+                <h3 style="color: #3664F4;">Masukkan Brand Klien</h3>
+                <p>Desain selalu disesuaikan dengan identitas dan tujuan bisnis klien secara mendalam.</p>
+            </div>
+            <div class="tip-card animate-on-scroll">
+                <h3 style="color: #3664F4;">Cek Kualitas</h3>
+                <p>Pengujian ketat sebelum diluncurkan untuk memastikan performa yang optimal.</p>
+            </div>
+            <div class="tip-card animate-on-scroll delay-1">
+                <h3 style="color: #3664F4;">Sesuai Target</h3>
+                <p>Memastikan desain dan teknologi sesuai dengan audiens target pasar klien.</p>
+            </div>
+            <div class="tip-card animate-on-scroll delay-2">
+                <h3 style="color: #3664F4;">Jangan Ditunda</h3>
+                <p>Mengedepankan efisiensi waktu untuk peluncuran produk yang tepat waktu.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial-section light-bg">
+        <div class="testimonial-content">
+            <div class="quote-box">
+                <p class="quote-text">"Kolaborasi dengan MUH ANUGRAH ASHARY adalah keputusan terbaik saya. Hasilnya melampaui ekspektasi!"</p>
+                <p class="client-name">- Naya / Makassar</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="layanan" class="tips-section dark-bg" style="padding-top: 100px;">
+        <h2>Layanan yang Saya Tawarkan</h2>
+        <p style="color: var(--text-dark); margin-bottom: 60px;">Solusi end-to-end mulai dari perencanaan, desain, hingga implementasi.</p>
+
+        <div class="tips-grid">
+            <div class="tip-card animate-on-scroll">
+                <h3 style="font-size: 3em; margin-bottom: 10px;">💻</h3>
+                <h3>Web Development</h3>
+                <p>Membangun website statis, dinamis, hingga aplikasi web kustom menggunakan HTML, CSS, JavaScript, dan framework terkait. Mulai dari harga Rp300.000</p>
+                <a href="https://wa.me/62895403047867" style="color: var(--text-dark); text-decoration: none; display: block; margin-top: 15px;">Lihat Paket</a>
+            </div>
+
+            <div class="tip-card animate-on-scroll delay-1">
+                <h3 style="font-size: 3em; margin-bottom: 10px;">🎨</h3>
+                <h3>UI/UX Design</h3>
+                <p>Membuat wireframe, prototype interaktif, dan desain antarmuka pengguna (UI) yang intuitif dan menarik.</p>
+                <a href="https://wa.me/62895403047867" style="color: var(--text-dark); text-decoration: none; display: block; margin-top: 15px;">Lihat Paket Desain</a>
+            </div>
+
+            <div class="tip-card animate-on-scroll delay-2">
+                <h3 style="font-size: 3em; margin-bottom: 10px;">⚙️</h3>
+                <h3>Konsultasi Teknis</h3>
+                <p>Memberikan konsultasi ahli tentang arsitektur sistem, optimasi performa, dan strategi teknologi sebagai mahasiswa.</p>
+                <a href="https://wa.me/62895403047867" style="color: var(--text-dark); text-decoration: none; display: block; margin-top: 15px;">Jadwalkan Panggilan</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section light-bg">
+        <h2 style="color: var(--blue);">Pertanyaan Umum tentang Layanan</h2>
+        <div style="max-width: 800px; margin: 30px auto;">
+            <div class="faq-item" style="border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 20px; background-color: var(--white); color: var(--text-dark);">
+                <h4 style="color: var(--text-dark); margin-bottom: 5px;">Bagaimana proses memulai proyek?</h4>
+                <p style="font-size: 0.9em;">Dimulai dengan tahap *discovery*, dilanjutkan dengan *wireframing*, desain, development, dan *deployment*.</p>
+            </div>
+
+            <div class="faq-item" style="border: 1px solid #ddd; border-radius: 8px; margin-bottom: 15px; padding: 20px; background-color: var(--white); color: var(--text-dark);">
+                <h4 style="color: var(--text-dark); margin-bottom: 5px;">Berapa lama waktu yang dibutuhkan?</h4>
+                <p style="font-size: 0.9em;">Waktu bervariasi tergantung kompleksitas, mulai dari 4 minggu hingga 3 bulan.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section dark-bg">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>HOSPORT (Hosting Portofolio)</h4>
+                <a href="https://github.com/MUHANUGRAHASHARYPUTRA">Web Development</a>
+                <a href="https://github.com/MUHANUGRAHASHARYPUTRA">UI/UX Design</a>
+            </div>
+            <div class="footer-col">
+                <h4>INFORMASI</h4>
+                <a href="https://github.com/MUHANUGRAHASHARYPUTRA">Review Klien</a>
+                <a href="https://github.com/MUHANUGRAHASHARYPUTRA">Proses Kerja</a>
+            </div>
+            <div class="footer-col">
+                <h4>BANTUAN</h4>
+                <a href="https://wa.me/62895403047867">Hubungi Saya</a>
+                <a href="https://wa.me/62895403047867">Tutorial</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section dark-bg">
+        <h2>Kontak Media Sosial</h2>
+        <div class="contact-icons">
+            
+        
+            <a href="https://instagram.com/anggaashry" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#e4405f"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            
+            <a href="https://tiktok.com/@anggaashry" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#000000"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="https://wa.me/62895403047867" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
+            </a>
+            <a href="https://github.com/MUHANUGRAHASHARYPUTRA" target="_blank" rel="noopener noreferrer" class="social-link">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#000000"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <div class="email-contact">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffffff"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                <span>anugrahasharyabubakar@gmail.com</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer dark-bg">
+        <div class="footer-bottom">
+            <p>&copy; 2025 Angga. Hak Cipta Dilindungi. | Makassar City.</p>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
